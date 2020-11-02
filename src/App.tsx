@@ -10,7 +10,7 @@ import Routes from './routes';
 
 const App: React.FC = () => (
   <NavigationContainer>
-    <StatusBar barStyle="light-content" backgroundColor="#312e38" />
+    <StatusBar barStyle="light-content" backgroundColor="#312e38" translucent />
     <AppProvider>
       <View style={{ flex: 1, backgroundColor: '#312e38' }}>
         <Routes />
@@ -20,3 +20,7 @@ const App: React.FC = () => (
 );
 
 export default App;
+
+/*
+translucent: não considera a status bar da parte do relogio
+*/
